@@ -17,17 +17,25 @@ LLVM 源代码编译与安装起步，继而从"Hello world!"起步
 
 ## 1.LLVM 源代码编译安装
 
-工作环境:[Windows](#windows) or [Linux](#linux)
+工作环境:Windows
 
-<span id="windows">Windows</span>
 方便个人操作,但使用方面可能较为繁琐
 工具:
-环境:
+1. git 2.38.1.windows.1
+    - 用于下载llvm源码
+2. getgnuwin32 0.6.3
+    - 用于在Windows上实现Linux指令
+3. Cmake 3.25.0
+    - 通过源码编译生成搭建工作环境的项目
+4. Microsoft Visual Studio 2022
+    - 生成工作环境
+5. python 3.10.0
+    - 用于自动化测试,搭建过程中未使用
 
-<span id="linux">Linux</span>
-操作繁琐不熟悉,但使用可能会简介
-工作环境:Ubuntun?
-虚拟机搭建:VMware or Windows 自带?
+
+
+
+
 
 ## 2.LLVM 的开发入门
 
