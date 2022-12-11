@@ -40,7 +40,14 @@ LLVM 源代码编译与安装起步，继而从"Hello world!"起步
 3. 使用getgnuwin32中的install.bat脚本进行各种包的安装,之后将安装出现的文件夹中的bin目录放入环境变量,检查一些指令即可。
 4. 在下载下来的llvm-project中新建build文件夹,打开[Developer PowerShell for VS 2022](#),将当前目录改为build文件夹后执行以下命令行进行源码编译
 ```cmake
-cmake -G "Visual Studio 17 2022" -Thost="x86" -A="Win32" -DCMAKE_BUILD_TYPE="RELEASE" -DLLVM_TARGETS_TO_BUILD="X86" -DLLVM_ENABLE_ASSERTIONS="ON" -DLLVM_ENABLE_PROJECTS="clang" -DLLVM_OPTIMIZED_TABLEGEN="ON" ../llvm
+cmake -G "Visual Studio 17 2022" 
+-A="Win32" -Thost="x86"
+-DCMAKE_BUILD_TYPE="RELEASE" 
+-DLLVM_TARGETS_TO_BUILD="X86" 
+-DLLVM_ENABLE_ASSERTIONS="ON" 
+-DLLVM_ENABLE_PROJECTS="clang" 
+-DLLVM_OPTIMIZED_TABLEGEN="ON" 
+../llvm
 ```
 其中命令行各项为
 
